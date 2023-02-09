@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Header Start*/
+header{ width: 100%; background-color: rgba(23, 23, 23, 0.15); padding: 20px; position: absolute; top:0;}
+header .container{ display: flex; justify-content: space-between;}
+header a{ text-decoration: none; font-size: 15px; margin-right: 100px; color: whitesmoke; letter-spacing: 1px; font-family: Tahoma;}
+/* Header End*/
+
+/* Section 1 Start*/
+/* Banner Start*/
+.banner-container{ width: 100%; height: 100vh; background-image: url(../images/background.jpeg); background-attachment: fixed;}
+.banner-container .container{ display: flex; justify-content: space-around; align-items: center; width: 100%; height: 100%;}
+/* Banner End*/
+/* Left Section Start*/
+.left-section{ width: 600px;}
+.banner-container .left-section h1{ margin: 0; font-size: 40px; color: whitesmoke; }
+.banner-container .left-section p{ margin: 0; font-size: 14px; letter-spacing: 1px; margin: 25px 0 25px 0; line-height: 28px; color: white;}
+.left-section button{ color: #af6ff2; font-family: Tahoma; background-color: whitesmoke; border: none; padding: 12px 50px; border-radius: 6px; cursor: pointer;}
+/* Left Section End*/
+
+/* Right Section Start*/
+.right-section{ width: 400px; background-color: white; border-radius: 10px; padding: 40px 0;}
+.right-section h4{ font-size: 20px; width: 300px; margin: auto; margin-bottom: 30px; color: rgb(95, 111, 128); font-family: Tahoma; letter-spacing: 1px;}
+.right-section .input-group{ width: 300px; margin: 30px auto; display: flex; flex-direction: column; position: relative;}
+.right-section .input-group label{ font-family: Tahoma; color: lightslategray; font-size: 15px; position: absolute; top: 10px; transition: 0.5s ease-in-out;}
+.right-section .input-group input{ font-family: Tahoma; color: lightslategray; border: none; padding: 7px; outline: none; border-bottom: 1px solid lightslategray;}
+.right-section .input-group input:focus ~label, .right-section .input-group input:valid ~label{ color:#af6ff2; top: -10px; font-size: 12px;}
+.submit-section{ text-align: center;}
+.submit-button{ background-color: #af6ff2; color: whitesmoke; font-family: Tahoma; border: none; padding: 10px 0; border-radius: 5px; width: 300px; cursor: pointer;}
+.submit-button:hover{ box-shadow: 0 3px 6px lightslategray; transition: 0.2s ease-in-out;}
+/* Right Section End*/
+
+/* Section 1 End*/
+
+/* Section 2 start*/
+.card-section{ display: flex; justify-content: space-evenly; height: 100vh; align-items: center;}
+.card-container{ width: 400px; border-radius: 15px; box-shadow: 10px 5px 26px lightslategray ; overflow: hidden; text-align: center; }
+.card-container h1{ color: lightslategray;}
+.image-container{ width: 100%; height: 550px; overflow: hidden;}
+.image-container img{ width: 100%; height: 100%; object-fit: cover; transition: 0.5s ease-in-out;}
+.image-container img:hover{ transform: scale(1.1) rotate(-5deg);}
+/* Section 2 End*/
+
+/* Footer Start*/
+footer{ text-align: center; color: lightslategray; padding: 15px;}
+footer span{ color: #af6ff2; font-weight: bold;}
+/* Footer End*/
+
